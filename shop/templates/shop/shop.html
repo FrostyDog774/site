@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/shop.css'%}" type="text/css">
+    <title>My works - tokynaba</title>
+  </head>
+  <body>
+    <div class="upper">
+      <a href="/main/"><h1>tokynaba</h1></a>
+    </div>
+    <ul class="menu">
+      <li><a href="/hush/">Hush-hush</a></li>
+      <li><a href="/orders/">Orders</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/aboutme/">About me</a></li>
+      <li><a href="/faq/">F.A.Q</a></li>
+    </ul>
+    <h3>My works</h3>
+    <div class="hover-effect-scale-whole">
+      <ul class="hover-effect-scale">
+        <li>
+          <img src="{% static 'img/inoske/6.jpg'%}" alt="">
+          <div>
+            <h3>Inoske Wooden katans</h3>
+            <a href="{% url 'inoske' %}">More information</a>
+          </div>
+        </li>
+        <li>
+          <img src="{% static 'img/zenitsu/1.jpg'%}"  alt="">
+          <div>
+            <h3>Zenitsu Wooden katana</h3>
+            <a href="{% url 'zenitsu' %}">More information</a>
+          </div>
+        </li>
+        <br>
+        <li>
+          <img src="{% static 'img/rengoku/6.jpg'%}" alt="">
+          <div>
+            <h3>Rengoku Wooden katana</h3>
+            <a href="{% url 'rengoku' %}">More information</a>
+          </div>
+        </li>
+        <li>
+          <img src="{% static 'img/muichiro/6.jpg'%}" alt="">
+          <div>
+            <h3>Muichiro Wooden katana</h3>
+            <a href="{% url 'muichiro' %}">More information</a>
+          </div>
+        </li>
+        <br>
+        <li>
+          <img src="{% static 'img/shinobu/6.jpg'%}" alt="">
+          <div>
+            <h3>Shinobu Wooden katana</h3>
+            <a href="{% url 'shinobu' %}">More information</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="{% static 'js/shop.js'%}"></script>
+    <footer>
+      <div class="bottom_menu">
+        <p class="bottom_left">Policies etc.</p>
+        <a href="{% url 'shipping' %}">Shipping Policy</a>
+        <a href="{% url 'refund' %}">Refund Policy</a>
+        <a href="{% url 'privacy' %}">Privacy Policy</a> <br>
+        <a href="/main/">Home</a>
+        <a href="/contactme/">Contact Me</a>
+        <p class="bottom_right">Thanks for your visit!</p>
+      </div>
+    </footer>
+  </body>
+</html>

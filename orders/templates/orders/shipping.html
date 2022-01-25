@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/shipping.css'%}" type="text/css">
+    <title>Shipping Policy - tokynaba</title>
+  </head>
+  <body>
+    <div class="upper">
+      <a href="/main/"><h1>tokynaba</h1></a>
+    </div>
+    <ul class="menu">
+      <li><a href="/hush/">Hush-hush</a></li>
+      <li><a href="/orders/">Orders</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/aboutme/">About me</a></li>
+      <li><a href="/faq/">F.A.Q</a></li>
+    </ul>
+    <h3>Shipping Policy</h3>
+    <p class="info">Specific order questions not answered here can be sent to crymorebrand@gmail.com. Please allow 48 - 72 hours for a response.</p>
+    <h4>Order Processing</h4>
+    <p class="info">Typical order processing time may range anywhere between 3 - 7 business days, unless otherwise stated (such as a banner on our front page advertising that we are away for an event or moving).
+      We aim to get orders out as quickly as possible, but during busy times such as product launches & the holidays, orders will take more time to get through. Launch and holiday processing times may take between 7 - 28 business days.
+      If your order requires urgency (birthday, event, etc), please let us know and if possible, we will try to accommodate your request. This may not always be possible depending on our schedule.
+      After your tracking number is provided estimated delivery time is 2-5 weeks.</p>
+    <h4>What if I purchase a pre-order item?</h4>
+    <p class="info">If you order in-stock items alongside a pre-order-item, then any in-stock items will be placed on hold until the preorder arrives.
+      If you wish to have them shipped separately, you will need to place two separate orders (the pre-order item separate from in-stock items) and pay the shipping for both orders.
+      If you place separate orders for pre-order items that are estimated to arrive at separate times, the items will ship separately.
+      If you place a single order for pre-order items that are estimated to arrive at the same time, the items will ship together.
+      Preorder details are subject to small changes, and delivery dates are estimated and may take longer depending on production.
+      We do not accept refunds on pre-orders because the funds are used to manufacture the goods that has been ordered.</p>
+    <h5>ORDER TRACKING</h5>
+    <p class="info">All orders come with a USPS tracking number. You will automatically receive a tracking number through e-mail once your shipping label has been printed.
+      Please note that tracking numbers on international orders may be delayed or stop updating entirely once they cross the border.</p>
+    <h5>ORDER COMBINATION</h5>
+    <p class="info">If you have placed two or more orders and would like them to be combined into a single order, please send an e-mail to crymorebrand@gmail.com as soon as possible. Please note that if a shipping confirmation email has already been sent, it is impossible to combine them.</p>
+    <h5>INTERNATIONAL CUSTOMS/h5>
+    <p class="info">Our store policy is to be as accurate and honest as possible when filling out customs forms. Lying about value is a serious offense and puts store-owners at risks of fines, or worse. Customers are fully responsible for any taxes or customs fees associated with receiving their order. We will not be able to refund any shipping & handling fees if you deny the package due to customs fees.</p>
+    <h5>"MY ORDER TRACKING NUMBER SAYS IT HAS BEEN DELIVERED, BUT MY PACKAGE ISN'T HERE?"</h5>
+    <p class="info">1. Try calling the post office to make sure it’s not being held there. Sometimes they can talk to the carriers and see if they remember dropping the package off at your address, or sometimes there are comments left in their records of where the package was placed.
+      2. Try asking your neighbors to see if something got mixed up.
+      3. Double-check with your family or roommates to make sure they didn't bring your package inside.
+      4. Check all areas of your property -- could it have gotten swept away or blown somewhere nearby? Be sure to check your yard, front/back door, porch, bushes, etc.
+      5. Wait a couple of days -- more often than not, USPS will prematurely label packages as "delivered" when in actuality, they are still sitting at the post office waiting to be delivered the next business day.
+      Once I hand something over to the United States Postal Service for shipping, it’s completely out of my hands, especially after it’s been marked as “Delivered”. Your local post office will be most qualified to help you locate your package!</p>
+    <h4>RETURN TO SENDER ORDERS</h4>
+    <p class="info">If your order is returned to sender due to an error that is not ours (for example: shipping address provided is inaccurate, order was not picked up at post office, package was refused, unpaid customs etc.) you may elect to either have your order reshipped if an alternative address is provided and re-shipment fee paid OR you may elect for a partial refund of the item minus the shipping costs and a 20% restocking fee. Please note that the re-shipment fee will be the original cost of shipping.</p>
+    <h4>ORDER DAMAGED IN TRANSIT OR INCORRECT UPON ARRIVAL</h4>
+    <p class="info">In cases of an order that has been damaged in transit, or if your order contained incorrect items, please send an email to crymorebrand@gmail.com within 30 days of delivery so we can help.
+      Please include your full name, store order number, and photographs of the incorrect or damaged goods. Sometimes there are easy fixes for minor things like bent pin backs, which we can help instruct you to fix.
+      Due to inventory changes, unfortunately we cannot offer replacements or refunds 30 days past delivery.</p>
+    <h3>Additional Delivery Related Issues</h3>
+    <p class="info">The risk of loss and title for such items pass to you upon our delivery to the carrier. It is your (if you are a User) or your Customer's (if you are a Merchant) responsibility to file any claim with a carrier for a lost shipment if carrier tracking indicates that the Product was delivered. In such case CryMoreBrand will not make any refunds and will not resend the Product.
+      CryMoreBrand will review replacement/return requests only if
+      (a) there is a missing Product, or a shipping error is at fault and
+      (b) CryMoreBrand receives a complaint within 30 days from the day the Product was delivered or within 30 days after the estimated delivery date, if the Product is missing.
+      *WE ARE NOT responsible for customs fees
+      *By purchasing from CryMoreBrand you agree to these conditions. Thank you.</p>
+    <footer>
+      <div class="bottom_menu">
+        <p class="bottom_left">Policies etc.</p>
+        <a href="{% url 'shipping' %}">Shipping Policy</a>
+        <a href="{% url 'refund' %}">Refund Policy</a>
+        <a href="{% url 'privacy' %}">Privacy Policy</a> <br>
+        <a href="/main/">Home</a>
+        <a href="/contactme/">Contact Me</a>
+        <p class="bottom_right">Thanks for your visit!</p>
+      </div>
+    </footer>
+  </body>
+</html>

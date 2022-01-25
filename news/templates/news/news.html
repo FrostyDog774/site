@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/news.css'%}" type="text/css">
+    <title>Some news - tokynaba</title>
+  </head>
+  <body>
+    <div class="upper">
+      <a href="/main/"><h1>tokynaba</h1></a>
+    </div>
+    <ul class="menu">
+      <li><a href="/shop/">My works</a></li>
+      <li><a href="/hush/">Hush-hush</a></li>
+      <li><a href="/orders/">Orders</a></li>
+      <li><a href="/aboutme/">About me</a></li>
+      <li><a href="/faq/">F.A.Q</a></li>
+    </ul>
+    <h3>News</h3>
+    <p class="news">Hello and welcome to the Update page, this page is to update you guys about new drops, shipment days and if happens, delays and it will be updated with a new calendar every month's 1st week. <br>
+                    Sometimes I do surprise pre orders, if that happens I'll make sure to post it in my stories/feed in my instagram 2-3 days before and add it to the calendar as soon as the drop date is decided. <br>
+                    _____________________________________________________________
+    </p>
+    <h4>Happy New Year!</h4>
+    <p class="news">After reading this part please make sure to read the other information as well! <br>
+      INFORMATION REGARDING 3RD JANUARY 8PM GMT+3 BUG PILLAR AND WIND PILLAR LEFTOVER DROP <br>
+      There are 2 different versions of both designs. One is Patreon exclusive and the other is public drop variants. <br>
+      Patreon Exclusive Variants will be dropping in my secret shop, which is a password protected part of my shop and the passwords are sent to my charged patrons, please check your Patreon inboxes for those! <br>
+      This is a in hand drop, so it means the pins will be shipped at Wednesday after the sale ends. <br>
+      The public variants can be found in this page, please click here! <br>
+      The Patreon exclusive variants can be found in this page, please click here! <br>
+      Please note, you need to enter the given password in order to access to the Patreon Exclusive variants!
+    </p>
+    <h4>Regular Shop General Information:</h4>
+    <p class="news">IMPORTANT: I do not accept Paypal payments, I'm located in Turkey so only available payment receiving option for me is to use credit card. Sometimes international banks mark the transactions as suspicious since they're to an outside country, if you have problems with paying for the goodies please contact your bank about it and let them know that you're aware of the transaction, it takes a very little time. Thank you! <br>
+      After a drop or a sale, I do my best to pack the goodies and get them ready for the shipment days which is every Wednesday, I get paid on Wednesdays after a sale so if you make a purchase after Wednesday you'd be waiting until the next Wednesday but if you have super urgent orders for example for a gift or something, don't hesitate to contact me via my email: tokynaba@mail.ru, I will do my best to accommodate. <br>
+      Please note: Sometimes I get overload with orders (thank you so much for that dude ily) and since it's only me, myself and I in this business, even when I do my best to pack i can be too slow. My normal order processing times are 1-2 weeks (for in stock items) but sometimes the packages can take me 1-1.5 months to pack and send. I usually post instant updates and explanations when that happens so make sure to check my instagram stories time to time. <br>
+      ABOUT RESTOCKS: I usually don't do restocks on old designs, but time to time if there is enough demand I will do restocks. However nothing is Open Edition in my store so you won't be able to get them anytime. I do my best to improve as an artist and a designer so I like my designs f r e s h. <br>
+      Thank you for reading!
+    </p>
+    <footer>
+      <div class="bottom_menu">
+        <p class="bottom_left">Policies etc.</p>
+        <a href="{% url 'shipping' %}">Shipping Policy</a>
+        <a href="{% url 'refund' %}">Refund Policy</a>
+        <a href="{% url 'privacy' %}">Privacy Policy</a> <br>
+        <a href="/main/">Home</a>
+        <a href="/contactme/">Contact Me</a>
+        <p class="bottom_right">Thanks for your visit!</p>
+      </div>
+    </footer>
+  </body>
+</html>

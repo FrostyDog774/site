@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/inoske.css'%}" type="text/css">
+    <title>Inoske - tokynaba</title>
+  </head>
+  <body>
+    <div class="upper">
+      <a href="/main/"><h1>tokynaba</h1></a>
+    </div>
+    <ul class="menu">
+      <li><a href="/shop/">My works</a></li>
+      <li><a href="/hush/">Hush-hush</a></li>
+      <li><a href="/orders/">Orders</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/aboutme/">About me</a></li>
+      <li><a href="/faq/">F.A.Q</a></li>
+    </ul>
+    <h3>Inoske Wooden Katanas</h3>
+    <div class="grid product ins">
+      <div class="column-xs-12 column-md-7 ins">
+        <div class="product-gallery ins">
+          <div class="product-image ins">
+            <img class="active ins" src="{% static 'img/inoske/1.jpg'%}">
+          </div>
+          <ul class="image-list ins">
+            <li class="image-item ins"><img src="{% static 'img/inoske/2.jpg'%}"></li>
+            <li class="image-item ins"><img src="{% static 'img/inoske/3.jpg'%}"></li>
+            <li class="image-item ins"><img src="{% static 'img/inoske/4.jpg'%}"></li>
+          </ul>
+          <script src="{% static 'js/inoske.js'%}"></script>
+        </div>
+      </div>
+      <div class="column-xs-12 column-md-5 ins">
+        <h1>Inoske Wooden Katanas</h1>
+        <h2>160$</h2>
+        <div class="description ins">
+          <p>Made to order, takes 1-2 weeks <br>
+            INCLUDES TWO KATANAS <br>
+            ✅Material: wood, special colors for wood, acrylic, lackered <br>
+            ✅Length, weight: 90cm, approximately 1kg <br>
+            ✅More information in my inst: uchiha.ha <br>
+            Also you can have a look at the process in my TikTok account: tokynaba
+            I work to order, so if you want to order another weapon, you can write to me(better text in inst), send pictures and we can calculate the price :)
+            If the payment is done, don’t cancel the order, because I start making it as fast as possible. Thanks:)
+            Product damages during the shipping is not the problem of seller. Before sending the product out, I can send photos on your email.
+            Feel yourself free asking any questions :)</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid related-products ins">
+      <div class="column-xs-12 ins">
+        <h3>You may also like</h3>
+      </div>
+      <div class="column-xs-12 column-md-4">
+        <img src="{% static 'img/rengoku/6.jpg'%}">
+        <a href="{% url 'rengoku' %}"><h4>Rengoku Wooden Katana</h4></a>
+        <p class="price ins">160$</p>
+      </div>
+      <div class="column-xs-12 column-md-4">
+        <img src="{% static 'img/muichiro/6.jpg'%}">
+        <a href="{% url 'muichiro' %}"><h4>Muichiro Wooden Katana</h4></a>
+        <p class="price ins">160$</p>
+      </div>
+      <div class="column-xs-12 column-md-4">
+        <img src="{% static 'img/zenitsu/1.jpg'%}">
+        <a href="{% url 'zenitsu' %}"><h4>Zenitsu Wooden Katana</h4></a>
+        <p class="price ins">160$</p>
+      </div>
+    </div>
+  </div>
+    <div class="buy_button">
+      <button type="submit" class="button"><a href="{% url 'expl' %}">How to order?</a></button>
+    </div>
+    <footer>
+      <div class="bottom_menu">
+        <p class="bottom_left">Policies etc.</p>
+        <a href="/main/">Home</a>
+        <a href="/contactme/">Contact Me</a>
+        <p class="bottom_right">Thanks for your visit!</p>
+      </div>
+    </footer>
+  </body>
+</html>

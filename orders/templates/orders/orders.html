@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/orders.css'%}" type="text/css">
+    <title>Orders - tokynaba</title>
+  </head>
+  <body>
+    <div class="upper">
+      <a href="/main/"><h1>tokynaba</h1></a>
+    </div>
+    <ul class="menu">
+      <li><a href="/shop/">My works</a></li>
+      <li><a href="/hush/">Hush-hush</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/aboutme/">About me</a></li>
+      <li><a href="/faq/">F.A.Q</a></li>
+    </ul>
+    <h3>Orders</h3>
+    <div class="info_order">
+      <p>Information</p>
+    </div>
+    <article class='gallery'>
+      <a class='gallery-link' href="{% static 'img/1.jpg'%}" target="_blank">
+        <figure class='gallery-image'>
+          <img height='1200' src="{% static 'img/1.jpg'%}"  width='1200'>
+          <figcaption>Examples of my works</figcaption>
+        </figure>
+      </a>
+      <a class='gallery-link' href="{% static 'img/2.jpg'%}" target="_blank">
+        <figure class='gallery-image'>
+          <img height='1400' src="{% static 'img/2.jpg'%}"  width='1200'>
+          <figcaption>Examples of my works</figcaption>
+        </figure>
+      </a>
+      <a class='gallery-link' href="{% static 'img/3.jpg'%}" target="_blank">
+        <figure class='gallery-image'>
+          <img height='1000' src="{% static 'img/3.jpg'%}"  width='1600'>
+          <figcaption>Examples of my works</figcaption>
+        </figure>
+      </a>
+      <a class='gallery-link' href="{% static 'img/4.jpg'%}" target="_blank">
+        <figure class='gallery-image'>
+          <img height='1000' src="{% static 'img/4.jpg'%}"  width='1400'>
+          <figcaption>Examples of my works</figcaption>
+        </figure>
+      </a>
+      <a class='gallery-link' href="{% static 'img/5.jpg'%}" target="_blank">
+        <figure class='gallery-image'>
+          <img height='1400' src="{% static 'img/5.jpg'%}" width='1400'>
+          <figcaption>Examples of my works</figcaption>
+        </figure>
+      </a>
+      <a class='gallery-link' href="{% static 'img/6.jpg'%}" target="_blank">
+        <figure class='gallery-image'>
+          <img height='1000' src="{% static 'img/6.jpg'%}"  width='1000'>
+          <figcaption>Examples of my works</figcaption>
+        </figure>
+      </a>
+      <a class='gallery-link' href="{% static 'img/7.jpg'%}" target="_blank">
+        <figure class='gallery-image'>
+          <img height='1600' src="{% static 'img/7.jpg'%}" width='1000'>
+          <figcaption>Examples of my works</figcaption>
+        </figure>
+      </a>
+      <a class='gallery-link' href="{% static 'img/8.jpg'%}" target="_blank">
+        <figure class='gallery-image'>
+          <img height='1600' src="{% static 'img/8.jpg'%}" width='1000'>
+          <figcaption>Examples of my works</figcaption>
+        </figure>
+      </a>
+      <a class='gallery-link' href="{% static 'img/9.jpg'%}" target="_blank">
+        <figure class='gallery-image'>
+          <img height='1600' src="{% static 'img/9.jpg'%}" width='1000'>
+          <figcaption>Examples of my works</figcaption>
+        </figure>
+      </a>
+    </article>
+    <script src="{% static 'js/orders.js'%}"></script>
+    <div class="info_order">
+      <p>If you want to order something <br>
+         then you can contact me and write down all the information</p>
+    </div>
+    <div class="buy_button">
+      <button type="submit" class="button"><a href="/contactme/">Contact Me</a></button>
+    </div>
+    <footer>
+      <div class="bottom_menu">
+        <p class="bottom_left">Policies etc.</p>
+        <a href="{% url 'shipping' %}">Shipping Policy</a>
+        <a href="{% url 'refund' %}">Refund Policy</a>
+        <a href="{% url 'privacy' %}">Privacy Policy</a> <br>
+        <a href="/main/">Home</a>
+        <a href="/contactme/">Contact Me</a>
+        <p class="bottom_right">Thanks for your visit!</p>
+      </div>
+    </footer>
+  </body>
+</html>

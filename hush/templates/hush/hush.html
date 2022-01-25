@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/hush.css'%}" type="text/css">
+    <title>Hush-hush. - tokynaba</title>
+  </head>
+  <body>
+    <div class="upper">
+      <a href="/main/"><h1>tokynaba</h1></a>
+    </div>
+    <ul class="menu">
+      <li><a href="/shop/">My works</a></li>
+      <li><a href="/orders/">Orders</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/aboutme/">About me</a></li>
+      <li><a href="/faq/">F.A.Q</a></li>
+    </ul>
+    <h3>Hush-hush</h3>
+    <div class="pass">
+      <form name="pass">
+      <p>Write down your code here!</p>
+      <input type="password" name="text" class="rounded-input"> <br>
+      <input type="button" class="password-button button" value="Cheeeck" onClick="password(), hide(this.form)">
+      </form>
+    </div>
+    <div class="wrapper hidden">
+      {% for Post in data %}
+      <section>
+        <div class="post">
+          <div class="post_description">
+            <p>{{ Post.title }}</p>
+          </div>
+          <div class="">
+            {% if Post.image1 %}
+              <div class="post_main">
+                <a href="{{Post.image1.url}}"rel="nofollow" target="_blank"><img src="{{Post.image1.url}}"><br></a>
+              </div>
+            {% endif %}
+            <div class="post_else">
+              {% if Post.image2 %}
+                <div class="post_else">
+                  <a href="{{Post.image2.url}}"rel="nofollow" target="_blank"><img src="{{Post.image2.url}}"></a>
+                </div>
+              {% endif %}
+              {% if Post.image3 %}
+                <div class="post_else">
+                  <a href="{{Post.image3.url}}"rel="nofollow" target="_blank"><img src="{{Post.image3.url}}"></a>
+                </div>
+              {% endif %}
+              {% if Post.image4 %}
+                <div class="post_else">
+                  <a href="{{Post.image4.url}}"rel="nofollow" target="_blank"><img src="{{Post.image4.url}}"></a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="post_info">
+            <p>{{ Post.description }}</p>
+          </div>
+          <div class="media flex-center">
+            {% if Post.instagram %}
+              <a href="{{ Post.instagram }}" target="_blank" class="post fa fa-github fa-4x icon-3d">Instagram</a>
+            {% endif %}
+            {% if Post.tiktok %}
+              <a href="{{ Post.tiktok }}" target="_blank" class="post fa fa-github fa-4x icon-3d">Tik-Tok</a>
+            {% endif %}
+          </div>
+        </div>
+      </section>
+      {% endfor %}
+    </div>
+    <script src="{% static 'js/hush.js'%}"></script>
+    <script src="{% static 'js/hush_post.js'%}"></script>
+    <footer>
+      <div class="bottom_menu">
+        <p class="bottom_left">Policies etc.</p>
+        <a href="{% url 'shipping' %}">Shipping Policy</a>
+        <a href="{% url 'refund' %}">Refund Policy</a>
+        <a href="{% url 'privacy' %}">Privacy Policy</a> <br>
+        <a href="/main/">Home</a>
+        <a href="/contactme/">Contact Me</a>
+        <p class="bottom_right">Thanks for your visit!</p>
+      </div>
+    </footer>
+  </body>
+</html>

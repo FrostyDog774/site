@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/refund.css'%}" type="text/css">
+    <title>Refund Policy - tokynaba</title>
+  </head>
+  <body>
+    <div class="upper">
+      <a href="/main/"><h1>tokynaba</h1></a>
+    </div>
+    <ul class="menu">
+      <li><a href="/hush/">Hush-hush</a></li>
+      <li><a href="/orders/">Orders</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/aboutme/">About me</a></li>
+      <li><a href="/faq/">F.A.Q</a></li>
+    </ul>
+    <h3>Refund Policy</h3>
+    <h4>RETURNS, EXCHANGES, AND CANCELLATIONS</h4>
+    <p class="info">We do accept returns and exchanges. Our return policy lasts within 30 days of delivery. Due to inventory changes, if 30 days have gone by since your purchase was delivered, unfortunately your order may not be returned.
+      To be eligible for a return for any reason, your item must be unused and in the same condition that you received it. It must also be in the original packaging. Please note that only full priced items may be returned. Sale, clearance, and seconds/B-grade pins are not eligible for return.
+      Customer must ship items back within 7 days of initiating the refund and include a tracking number. You will be responsible for paying for your own shipping costs for returning your item. For returns over $50 USD, we suggest purchasing postal insurance, as we don’t guarantee that we will receive your returned item.
+      Once your return is received, we will send you an email to notify you that we have received your returned item. Your refund will be processed minus the order's original shipping & handling costs, and a credit will automatically be applied to your credit card or original method of payment, within 7 days after receiving your item.
+      We can not offer refunds on pre-orders since the funds most likely already been used to manufacture the goods that has been ordered.</p>
+    <h4>ORDER DAMAGED IN TRANSIT OR INCORRECT UPON ARRIVAL</h4>
+    <p class="info">In cases of an order that has been damaged in transit, or if your order contained incorrect items, please send an email to crymorebrand@gmail.com within 30 days of delivery so we can help.
+      Please include your full name, store order number, and photographs of the incorrect or damaged goods. Sometimes there are easy fixes for minor things like bent pin backs, which we can help instruct you to fix.
+      Due to inventory changes, unfortunately we cannot offer replacements or refunds 30 days past delivery.</p>
+    <footer>
+      <div class="bottom_menu">
+        <p class="bottom_left">Policies etc.</p>
+        <a href="{% url 'shipping' %}">Shipping Policy</a>
+        <a href="{% url 'refund' %}">Refund Policy</a>
+        <a href="{% url 'privacy' %}">Privacy Policy</a> <br>
+        <a href="/main/">Home</a>
+        <a href="/contactme/">Contact Me</a>
+        <p class="bottom_right">Thanks for your visit!</p>
+      </div>
+    </footer>
+  </body>
+</html>
